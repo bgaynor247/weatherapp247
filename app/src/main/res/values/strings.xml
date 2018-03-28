@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">weatherapp247</string>
+    <string name="city_country">City, Country</string>
+    <string name="content_desc_weather_icon">Weather Icon</string>
 </resources>

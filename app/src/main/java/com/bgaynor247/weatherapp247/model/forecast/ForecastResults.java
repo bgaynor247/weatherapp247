@@ -16,7 +16,7 @@ public class ForecastResults {
     private Long cnt;
     @SerializedName("list")
     @Expose
-    private java.util.List<com.bgaynor247.weatherapp247.forecast.List> list = null;
+    private java.util.List<com.bgaynor247.weatherapp247.model.forecast.List> list = null;
     @SerializedName("city")
     @Expose
     private City city;
@@ -45,11 +45,11 @@ public class ForecastResults {
         this.cnt = cnt;
     }
 
-    public java.util.List<com.bgaynor247.weatherapp247.forecast.List> getList() {
+    public java.util.List<com.bgaynor247.weatherapp247.model.forecast.List> getList() {
         return list;
     }
 
-    public void setList(java.util.List<com.bgaynor247.weatherapp247.forecast.List> list) {
+    public void setList(java.util.List<com.bgaynor247.weatherapp247.model.forecast.List> list) {
         this.list = list;
     }
 

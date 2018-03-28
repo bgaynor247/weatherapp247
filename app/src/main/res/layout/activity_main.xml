@@ -13,7 +13,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:text="City, Country" />
+        android:layout_marginBottom="12dp"
+        android:text="@string/city_country"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/city"
+        android:contentDescription="@string/content_desc_weather_icon"
+        />
+
+    <TextView
+        android:id="@+id/weather_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/weather_icon"
+        android:textSize="16sp"
+        android:text="Main"
+        />
+
+
+    <TextView
+        android:id="@+id/weather_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_main"
+        android:layout_alignStart="@+id/weather_main"
+        android:layout_marginTop="6dp"
+        android:text="Description"
+        />
+
+    <TextView
+        android:id="@+id/weather_temp_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/weather_main"
+        android:layout_below="@+id/weather_desc"
+        android:text="Temp High"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_desc"
+        android:layout_toEndOf="@+id/weather_temp_high"
+        android:text="Temp Low"
+        />
 
 
 </RelativeLayout>
